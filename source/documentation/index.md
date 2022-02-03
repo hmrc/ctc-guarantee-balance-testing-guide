@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 ## Useful links to our pages
 
-- [CTC Guarantee Balance Service Guide](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-guarantee-balance-service-guide/)
+- [CTC Guarantee Balance Service Guide](https://developer.service.hmrc.gov.uk/guides/ctc-guarantee-balance-service-guide/)
 - [CTC Guarantee Balance Documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0)
 
 ## Introduction
