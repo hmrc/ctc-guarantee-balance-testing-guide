@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import sys.process._
 class BuildSpec extends WordSpec with Matchers {
   "Building the content" should {
     "produce static files" in {
-      val result = "bundle install" #&& Process("bundle exec middleman build --verbose --build-dir=public/ --clean", None) !
+      val result = "bundle install" #&& Process("bundle exec middleman build --verbose --build-dir=public/ --clean", None, "BASE_PATH" -> "/guides/ctc-guarantee-balance-testing-guide/") !
 
       result shouldBe 0
     }
