@@ -8,8 +8,8 @@ description: Software developers, designers, product owners or business analysts
 
 ## Useful links to our pages
 
-- [CTC Guarantee Balance Service Guide](https://developer.service.hmrc.gov.uk/guides/ctc-guarantee-balance-service-guide/)
-- [CTC Guarantee Balance Documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0)
+- [CTC Guarantee Balance Service Guide](/guides/ctc-guarantee-balance-service-guide/)
+- [CTC Guarantee Balance Documentation](/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0)
 
 ## Introduction
 
@@ -25,17 +25,17 @@ You must understand:
 
 We have released the CTC Guarantee Balance API to HMRC&#39;s sandbox environment. You can now run tests once you have finished your software development.
 
-Before you interact with our API, you must authenticate with HMRC. All endpoints in the CTC Guarantee Balance API are subject to User-Restricted Authentication. Further details are given on the [Authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation) page.
+Before you interact with our API, you must authenticate with HMRC. All endpoints in the CTC Guarantee Balance API are subject to User-Restricted Authentication. Further details are given on the [Authorisation](/api-documentation/docs/authorisation) page.
 
 ## How to get set up for testing
 
-1. First register for a developer account. You can do this by following the instructions on the [Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub) page.
-2. [Sign in](https://developer.service.hmrc.gov.uk/developer/login) to the HMRC Developer Hub.
+1. First register for a developer account. You can do this by following the instructions on the [Using the Developer Hub](/api-documentation/docs/using-the-hub) page.
+2. [Sign in](/developer/login) to the HMRC Developer Hub.
 3. Add a new application to the sandbox or open an existing application.
 4. In the left panel, click **API Subscriptions** and subscribe to our Common Transit Convention Guarantee Balance API.
 5. Create a Client ID and a Client Secret.
-6. Use the [Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0) or the [create a test user service](https://developer.service.hmrc.gov.uk/api-test-user) to create a test user for either an [individual](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-individual_post_accordion) or an [organisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-organisation_post_accordion). A test user is a dummy Government Gateway user ID for testing in the sandbox.
-7. Authenticate with HMRC by following the instructions on the [Authorisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation) page, which describes the User-Restricted Authentication process.
+6. Use the [Create Test User API](/api-documentation/docs/api/service/api-platform-test-user/1.0) or the [create a test user service](/api-test-user) to create a test user for either an [individual](/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-individual_post_accordion) or an [organisation](/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-organisation_post_accordion). A test user is a dummy Government Gateway user ID for testing in the sandbox.
+7. Authenticate with HMRC by following the instructions on the [Authorisation](/api-documentation/docs/authorisation) page, which describes the User-Restricted Authentication process.
 
 You should now be able to send requests to the CTC Guarantee Balance API in the sandbox environment.
 
@@ -45,7 +45,7 @@ Here are the main developer files you will need:
 
 - JSON schema files (file unzips and downloads)
 
-ZIP, 13KB
+[ZIP, 5KB](documentation/figures/CTC_Guarantee_Balance_API_JSON.zip)
 
 The ZIP file contains JSON files. Open in your preferred file viewer.
 
@@ -424,12 +424,12 @@ The following XI scenario uses a GB EORI by mistake:
 
 Once you are satisfied with your tests and are confident that your software is fully compatible with our API:
 
-1. Log all your evidence and results by filling in all the sections of this [checklist form](https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/CTC_Traders_API_Application_for_Productions_Credentials.docx) (this is a Word document which will download). You must also answer all the questions at the end of the checklist.
+1. Log all your evidence and results by filling in all the sections of this [checklist form](documentation/figures/CTC Guarantee Balance API Checklist 07-02-22.odt) (this is an OpenOffice Document which will download). You must also answer all the questions at the end of the checklist.
 2. When you are ready, email your completed form to SDSTeam@hmrc.gov.uk.
 3. We will check your test evidence using the information you give on this form.
 4. When we are satisfied that you have done enough testing, you will be granted access to the live API system.
 
-For further information about the process you need to follow to submit your application for production approval, see [section 4 of Using the Developer Hub](https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub).
+For further information about the process you need to follow to submit your application for production approval, see [section 4 of Using the Developer Hub](/api-documentation/docs/using-the-hub).
 
 ## Troubleshooting
 
@@ -444,6 +444,6 @@ You can check planned API downtime or if there are technical issues:
 
 Email our dedicated software developer support team at SDSTeam@hmrc.gov.uk if you have any questions or difficulties or need additional clarification on this testing process.
 
-For versioning information and a list of errors that you might receive, please refer to the [CTC Guarantee Balance API Definition](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0) page.
+For versioning information and a list of errors that you might receive, please refer to the [CTC Guarantee Balance API Definition](/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0) page.
 
 Bookmark and save this page for future reference.
