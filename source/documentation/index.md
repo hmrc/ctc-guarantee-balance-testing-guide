@@ -63,7 +63,7 @@ Trader Test uses the same NCTS and Guarantee Management System code as live prod
 
 You must:
 
-- Test [common scenarios](#_Common_scenarios) based on the reference data we provide.
+- Test [common scenarios](#common-scenarios) based on the reference data we provide.
 - Check against our JSON schemas to ensure your requests are valid. You can download a zip file with all the CTC Guarantee balance API JSON schemas.
 
 ## Common scenarios
