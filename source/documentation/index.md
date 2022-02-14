@@ -260,17 +260,21 @@ The following GB scenario uses an invalid GRN:
 ##### Expected Response (GB):
 
     {
-        "code": "FUNCTIONAL_ERROR",
-        "message": "The request was rejected by the guarantee management system",
-        "response": {
-            "errors": [
+        "code":"FUNCTIONAL_ERROR",
+        "message":"The request was rejected by the guarantee management system",
+        "response":{
+            "errors":[
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).Guarantee reference number (GRN)"
+                    "errorType":12,
+                    "errorPointer":"GRR(1).Guarantee reference number (GRN)"
                 },
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).ACC(1).Access code"
+                    "errorType":12,
+                    "errorPointer":"GRR(1).OTG(1).TIN"
+                },
+                {
+                    "errorType":12,
+                    "errorPointer":"GRR(1).ACC(1).Access code"
                 }
             ]
         }
@@ -291,22 +295,25 @@ The following XI scenario uses an invalid GRN:
 ##### Expected Response (XI):
 
     {
-        "code": "FUNCTIONAL_ERROR",
-        "message": "The request was rejected by the guarantee management system",
-        "response": {
-            "errors": [
+        "code":"FUNCTIONAL_ERROR",
+        "message":"The request was rejected by the guarantee management system",
+        "response":{
+            "errors":[
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).Guarantee reference number (GRN)"
+                    "errorType":12,
+                    "errorPointer":"GRR(1).Guarantee reference number (GRN)"
                 },
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).ACC(1).Access code"
+                    "errorType":12,
+                    "errorPointer":"GRR(1).OTG(1).TIN"
+                },
+                {
+                    "errorType":12,
+                    "errorPointer":"GRR(1).ACC(1).Access code"
                 }
             ]
         }
     }
-
 
 #### Scenario 3.3: Invalid Access Code
 
@@ -324,13 +331,21 @@ The following GB scenario uses an invalid access code:
 ##### Expected Response (GB):
 
     {
-        "code": "FUNCTIONAL_ERROR",
-        "message": "The request was rejected by the guarantee management system",
-        "response": {
-            "errors": [
+        "code":"FUNCTIONAL_ERROR",
+        "message":"The request was rejected by the guarantee management system",
+        "response":{
+            "errors":[
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).ACC(1).Access code"
+                    "errorType":12,
+                    "errorPointer":"RC1.TIN"
+                },
+                {
+                    "errorType":12,
+                    "errorPointer":"GRR(1).OTG(1).TIN"
+                },
+                {
+                    "errorType":26,
+                    "errorPointer":"RC1.TIN"
                 }
             ]
         }
@@ -351,18 +366,25 @@ The following XI scenario uses an invalid access code:
 ##### Expected Response (XI):
 
     {
-        "code": "FUNCTIONAL_ERROR",
-        "message": "The request was rejected by the guarantee management system",
-        "response": {
-            "errors": [
+        "code":"FUNCTIONAL_ERROR",
+        "message":"The request was rejected by the guarantee management system",
+        "response":{
+            "errors":[
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).ACC(1).Access code"
+                    "errorType":12,
+                    "errorPointer":"RC1.TIN"
+                },
+                {
+                    "errorType":12,
+                    "errorPointer":"GRR(1).OTG(1).TIN"
+                },
+                {
+                    "errorType":26,
+                    "errorPointer":"RC1.TIN"
                 }
             ]
         }
     }
-
 
 #### Scenario 3.4: Invalid Combination of Valid EORI and Valid GRN
 
@@ -380,13 +402,21 @@ The following GB scenario uses an XI EORI by mistake:
 ##### Expected Response (GB):
 
     {
-        "code": "FUNCTIONAL_ERROR",
-        "message": "The request was rejected by the guarantee management system",
-        "response": {
-            "errors": [
+        "code":"FUNCTIONAL_ERROR",
+        "message":"The request was rejected by the guarantee management system",
+        "response":{
+            "errors":[
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).OTG(1).TIN"
+                    "errorType":12,
+                    "errorPointer":"RC1.TIN"
+                },
+                {
+                    "errorType":12,
+                    "errorPointer":"GRR(1).OTG(1).TIN"
+                },
+                {
+                    "errorType":26,
+                    "errorPointer":"RC1.TIN"
                 }
             ]
         }
@@ -407,13 +437,21 @@ The following XI scenario uses a GB EORI by mistake:
 ##### Expected Response (XI):
 
     {
-        "code": "FUNCTIONAL_ERROR",
-        "message": "The request was rejected by the guarantee management system",
-        "response": {
-            "errors": [
+        "code":"FUNCTIONAL_ERROR",
+        "message":"The request was rejected by the guarantee management system",
+        "response":{
+            "errors":[
                 {
-                    "errorType": 12,
-                    "errorPointer": "GRR(1).OTG(1).TIN"
+                    "errorType":12,
+                    "errorPointer":"RC1.TIN"
+                },
+                {
+                    "errorType":12,
+                    "errorPointer":"GRR(1).OTG(1).TIN"
+                },
+                {
+                    "errorType":26,
+                    "errorPointer":"RC1.TIN"
                 }
             ]
         }
