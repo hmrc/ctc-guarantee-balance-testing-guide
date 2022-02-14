@@ -331,21 +331,13 @@ The following GB scenario uses an invalid access code:
 ##### Expected Response (GB):
 
     {
-        "code":"FUNCTIONAL_ERROR",
-        "message":"The request was rejected by the guarantee management system",
-        "response":{
-            "errors":[
+        "code": "FUNCTIONAL_ERROR",
+        "message": "The request was rejected by the guarantee management system",
+        "response": {
+            "errors": [
                 {
-                    "errorType":12,
-                    "errorPointer":"RC1.TIN"
-                },
-                {
-                    "errorType":12,
-                    "errorPointer":"GRR(1).OTG(1).TIN"
-                },
-                {
-                    "errorType":26,
-                    "errorPointer":"RC1.TIN"
+                    "errorType": 12,
+                    "errorPointer": "GRR(1).ACC(1).Access code"
                 }
             ]
         }
@@ -437,21 +429,13 @@ The following XI scenario uses a GB EORI by mistake:
 ##### Expected Response (XI):
 
     {
-        "code":"FUNCTIONAL_ERROR",
-        "message":"The request was rejected by the guarantee management system",
-        "response":{
-            "errors":[
+        "code": "FUNCTIONAL_ERROR",
+        "message": "The request was rejected by the guarantee management system",
+        "response": {
+            "errors": [
                 {
-                    "errorType":12,
-                    "errorPointer":"RC1.TIN"
-                },
-                {
-                    "errorType":12,
-                    "errorPointer":"GRR(1).OTG(1).TIN"
-                },
-                {
-                    "errorType":26,
-                    "errorPointer":"RC1.TIN"
+                    "errorType": 12,
+                    "errorPointer": "GRR(1).OTG(1).TIN"
                 }
             ]
         }
