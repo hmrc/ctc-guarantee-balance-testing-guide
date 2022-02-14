@@ -253,7 +253,7 @@ The following GB scenario uses an invalid GRN:
     {
       "taxIdentifier": "GB954131533000",
       "guaranteeReference": "20GB0000000000000",
-      "accessCode": "ABC1"
+      "accessCode": "AC01"
     }
 
 
@@ -286,9 +286,9 @@ The following XI scenario uses an invalid GRN:
 ##### Sample Request (XI):
 
     {
-      "taxIdentifier": "GB954131533000",
+      "taxIdentifier": "XI195624547845",
       "guaranteeReference": "22XI0000000000000",
-      "accessCode": "ABC1"
+      "accessCode": "AC01"
     }
 
 
@@ -357,7 +357,7 @@ The following XI scenario uses an invalid access code:
 ##### Sample Request (XI):
 
     {
-      "taxIdentifier": "GB954131533000",
+      "taxIdentifier": "XI195624547845",
       "guaranteeReference": "22GB0000010000313",
       "accessCode": "AC00"
     }
