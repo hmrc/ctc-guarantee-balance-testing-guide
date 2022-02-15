@@ -350,7 +350,7 @@ The following XI scenario uses an invalid access code:
 
     {
       "taxIdentifier": "XI195624547845",
-      "guaranteeReference": "22GB0000010000313",
+      "guaranteeReference": "22XI00000100002X7",
       "accessCode": "AC00"
     }
 
@@ -358,21 +358,13 @@ The following XI scenario uses an invalid access code:
 ##### Expected Response (XI):
 
     {
-        "code":"FUNCTIONAL_ERROR",
-        "message":"The request was rejected by the guarantee management system",
-        "response":{
-            "errors":[
+        "code": "FUNCTIONAL_ERROR",
+        "message": "The request was rejected by the guarantee management system",
+        "response": {
+            "errors": [
                 {
-                    "errorType":12,
-                    "errorPointer":"RC1.TIN"
-                },
-                {
-                    "errorType":12,
-                    "errorPointer":"GRR(1).OTG(1).TIN"
-                },
-                {
-                    "errorType":26,
-                    "errorPointer":"RC1.TIN"
+                    "errorType": 12,
+                    "errorPointer": "GRR(1).ACC(1).Access code"
                 }
             ]
         }
