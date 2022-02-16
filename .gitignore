@@ -28,3 +28,7 @@ yarn-error.log
 .bsp
 package-lock.json
 Gemfile.lock
+
+.DS_Store
+**/.DS_Store
+build
