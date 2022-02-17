@@ -31,7 +31,7 @@
 <li>In the left panel, click <strong>API Subscriptions</strong> and subscribe to our Common Transit Convention Guarantee Balance API.</li>
 <li>Create a Client ID and a Client Secret.</li>
 <li>Use the <a href="/api-documentation/docs/api/service/api-platform-test-user/1.0" rel="noopener noreferrer">Create Test User API</a> or the <a href="/api-test-user" rel="noopener noreferrer">create a test user service</a> to create a test user for either an <a href="/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-individual_post_accordion" rel="noopener noreferrer">individual</a> or an <a href="/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-organisation_post_accordion" rel="noopener noreferrer">organisation</a>. A test user is a dummy Government Gateway user ID for testing in the sandbox.</li>
-<li><a href="/api-documentation/docs/authorisation" rel="noopener noreferrer">Authenticate with HMRC</a> and following the instructions on the page, which describes the User-Restricted Authentication process.</li>
+<li><a href="/api-documentation/docs/authorisation" rel="noopener noreferrer">Authenticate with HMRC</a> and follow the instructions on the page, which describes the User-Restricted Authentication process.</li>
 </ol>
 <p>You should now be able to send requests to the CTC Guarantee Balance API in the sandbox environment.</p>
 <h2 id="schemas">Schemas</h2>
