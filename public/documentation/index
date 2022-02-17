@@ -4,8 +4,8 @@
 
 
 <ul>
-<li><a href="https://developer.service.hmrc.gov.uk/guides/ctc-guarantee-balance-service-guide/" rel="noopener noreferrer">CTC Guarantee Balance Service Guide</a></li>
-<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0" rel="noopener noreferrer">CTC Guarantee Balance Documentation</a></li>
+<li><a href="/guides/ctc-guarantee-balance-service-guide/" rel="noopener noreferrer">CTC Guarantee Balance Service Guide</a></li>
+<li><a href="/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0" rel="noopener noreferrer">CTC Guarantee Balance Documentation</a></li>
 </ul>
 <h2 id="introduction">Introduction</h2>
 
@@ -20,18 +20,18 @@
 <li>the balance responses could become out of date quickly if you have a lot of transit movements progressing at the same time</li>
 </ul>
 <p>We have released the CTC Guarantee Balance API to HMRC&rsquo;s sandbox environment. You can now run tests once you have finished your software development.</p>
-<p>Before you interact with our API, you must authenticate with HMRC. All endpoints in the CTC Guarantee Balance API are subject to User-Restricted Authentication. Further details are given on the <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation" rel="noopener noreferrer">Authorisation</a> page.</p>
+<p>Before you interact with our API, you must authenticate with HMRC. All endpoints in the CTC Guarantee Balance API are subject to User-Restricted Authentication. Further details are given on the <a href="/api-documentation/docs/authorisation" rel="noopener noreferrer">Authorisation</a> page.</p>
 <h2 id="how-to-get-set-up-for-testing">How to get set up for testing</h2>
 
 
 <ol>
-<li>First register for a developer account. You can do this by following the instructions on the <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub" rel="noopener noreferrer">Using the Developer Hub</a> page.</li>
-<li><a href="https://developer.service.hmrc.gov.uk/developer/login" rel="noopener noreferrer">Sign in</a> to the HMRC Developer Hub.</li>
+<li><a href="/api-documentation/docs/using-the-hub" rel="noopener noreferrer">Register for a developer account</a>. You can do this by following the instructions on the <a href="/api-documentation/docs/using-the-hub" rel="noopener noreferrer">Using the Developer Hub</a> page.</li>
+<li><a href="/developer/login" rel="noopener noreferrer">Sign in to the HMRC Developer Hub</a>.</li>
 <li>Add a new application to the sandbox or open an existing application.</li>
 <li>In the left panel, click <strong>API Subscriptions</strong> and subscribe to our Common Transit Convention Guarantee Balance API.</li>
 <li>Create a Client ID and a Client Secret.</li>
-<li>Use the <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0" rel="noopener noreferrer">Create Test User API</a> or the <a href="https://developer.service.hmrc.gov.uk/api-test-user" rel="noopener noreferrer">create a test user service</a> to create a test user for either an <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-individual_post_accordion" rel="noopener noreferrer">individual</a> or an <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-organisation_post_accordion" rel="noopener noreferrer">organisation</a>. A test user is a dummy Government Gateway user ID for testing in the sandbox.</li>
-<li>Authenticate with HMRC by following the instructions on the <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation" rel="noopener noreferrer">Authorisation</a> page, which describes the User-Restricted Authentication process.</li>
+<li>Use the <a href="/api-documentation/docs/api/service/api-platform-test-user/1.0" rel="noopener noreferrer">Create Test User API</a> or the <a href="/api-test-user" rel="noopener noreferrer">create a test user service</a> to create a test user for either an <a href="/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-individual_post_accordion" rel="noopener noreferrer">individual</a> or an <a href="/api-documentation/docs/api/service/api-platform-test-user/1.0#_create-a-test-user-which-is-an-organisation_post_accordion" rel="noopener noreferrer">organisation</a>. A test user is a dummy Government Gateway user ID for testing in the sandbox.</li>
+<li><a href="/api-documentation/docs/authorisation" rel="noopener noreferrer">Authenticate with HMRC</a> and following the instructions on the page, which describes the User-Restricted Authentication process.</li>
 </ol>
 <p>You should now be able to send requests to the CTC Guarantee Balance API in the sandbox environment.</p>
 <h2 id="schemas">Schemas</h2>
@@ -39,9 +39,8 @@
 <p>Here are the main developer files you will need:</p>
 
 <ul>
-<li>JSON schema files (file unzips and downloads)</li>
+<li><a href="/documentation/figures/CTC_Guarantee_Balance_API_JSON.zip" rel="noopener noreferrer">JSON schema files, ZIP, 5KB (file unzips and downloads)</a></li>
 </ul>
-<p>ZIP, 13KB</p>
 <p>The ZIP file contains JSON files. Open in your preferred file viewer.</p>
 <h2 id="what-is-trader-test">What is trader test?</h2>
 
@@ -54,7 +53,7 @@
 <p>You must:</p>
 
 <ul>
-<li>Test <a href="#_Common_scenarios" rel="noopener noreferrer">common scenarios</a> based on the reference data we provide.</li>
+<li>Test <a href="#common-scenarios" rel="noopener noreferrer">common scenarios</a> based on the reference data we provide.</li>
 <li>Check against our JSON schemas to ensure your requests are valid. You can download a zip file with all the CTC Guarantee balance API JSON schemas.</li>
 </ul>
 <h2 id="common-scenarios">Common scenarios</h2>
@@ -64,16 +63,22 @@
 <p>These scenarios make use of the following data values for GB and XI:</p>
 <h3 id="gb">GB</h3>
 
-<p>EORI: GB954131533000<br>
-GRN: 22GB0000010000313<br>
-Access Code: AC01<br>
-Current balance: £50,000</p>
+
+<ul>
+<li>EORI: GB954131533000</li>
+<li>GRN: 22GB0000010000313</li>
+<li>Access Code: AC01</li>
+<li>Current balance: £50,000</li>
+</ul>
 <h3 id="xi">XI</h3>
 
-<p>EORI: XI195624547845<br>
-GRN: 22XI00000100002X7<br>
-Access Code: AC01<br>
-Current balance: £30,000<br></p>
+
+<ul>
+<li>EORI: XI195624547845</li>
+<li>GRN: 22XI00000100002X7</li>
+<li>Access Code: AC01</li>
+<li>Current balance: £30,000</li>
+</ul>
 <h3 id="scenario-1-successful-balance-response">Scenario 1: Successful balance response</h3>
 
 <p>This scenario verifies that when your software issues a successful balance request, you receive the expected response with the correct balance and currency.</p>
@@ -209,22 +214,26 @@ Current balance: £30,000<br></p>
 <div class="highlight"><pre class="highlight plaintext" tabindex="0"><code>{
   "taxIdentifier": "GB954131533000",
   "guaranteeReference": "20GB0000000000000",
-  "accessCode": "ABC1"
+  "accessCode": "AC01"
 }
 </code></pre></div><h5 id="scenario-3-2-invalid-grn-expected-response-gb">Expected Response (GB):</h5>
 
 <div class="highlight"><pre class="highlight plaintext" tabindex="0"><code>{
-    "code": "FUNCTIONAL_ERROR",
-    "message": "The request was rejected by the guarantee management system",
-    "response": {
-        "errors": [
+    "code":"FUNCTIONAL_ERROR",
+    "message":"The request was rejected by the guarantee management system",
+    "response":{
+        "errors":[
             {
-                "errorType": 12,
-                "errorPointer": "GRR(1).Guarantee reference number (GRN)"
+                "errorType":12,
+                "errorPointer":"GRR(1).Guarantee reference number (GRN)"
             },
             {
-                "errorType": 12,
-                "errorPointer": "GRR(1).ACC(1).Access code"
+                "errorType":12,
+                "errorPointer":"GRR(1).OTG(1).TIN"
+            },
+            {
+                "errorType":12,
+                "errorPointer":"GRR(1).ACC(1).Access code"
             }
         ]
     }
@@ -233,24 +242,28 @@ Current balance: £30,000<br></p>
 <h5 id="scenario-3-2-invalid-grn-sample-request-xi">Sample Request (XI):</h5>
 
 <div class="highlight"><pre class="highlight plaintext" tabindex="0"><code>{
-  "taxIdentifier": "GB954131533000",
+  "taxIdentifier": "XI195624547845",
   "guaranteeReference": "22XI0000000000000",
-  "accessCode": "ABC1"
+  "accessCode": "AC01"
 }
 </code></pre></div><h5 id="scenario-3-2-invalid-grn-expected-response-xi">Expected Response (XI):</h5>
 
 <div class="highlight"><pre class="highlight plaintext" tabindex="0"><code>{
-    "code": "FUNCTIONAL_ERROR",
-    "message": "The request was rejected by the guarantee management system",
-    "response": {
-        "errors": [
+    "code":"FUNCTIONAL_ERROR",
+    "message":"The request was rejected by the guarantee management system",
+    "response":{
+        "errors":[
             {
-                "errorType": 12,
-                "errorPointer": "GRR(1).Guarantee reference number (GRN)"
+                "errorType":12,
+                "errorPointer":"GRR(1).Guarantee reference number (GRN)"
             },
             {
-                "errorType": 12,
-                "errorPointer": "GRR(1).ACC(1).Access code"
+                "errorType":12,
+                "errorPointer":"GRR(1).OTG(1).TIN"
+            },
+            {
+                "errorType":12,
+                "errorPointer":"GRR(1).ACC(1).Access code"
             }
         ]
     }
@@ -283,8 +296,8 @@ Current balance: £30,000<br></p>
 <h5 id="scenario-3-3-invalid-access-code-sample-request-xi">Sample Request (XI):</h5>
 
 <div class="highlight"><pre class="highlight plaintext" tabindex="0"><code>{
-  "taxIdentifier": "GB954131533000",
-  "guaranteeReference": "22GB0000010000313",
+  "taxIdentifier": "XI195624547845",
+  "guaranteeReference": "22XI00000100002X7",
   "accessCode": "AC00"
 }
 </code></pre></div><h5 id="scenario-3-3-invalid-access-code-expected-response-xi">Expected Response (XI):</h5>
@@ -314,13 +327,21 @@ Current balance: £30,000<br></p>
 </code></pre></div><h5 id="scenario-3-4-invalid-combination-of-valid-eori-and-valid-grn-expected-response-gb">Expected Response (GB):</h5>
 
 <div class="highlight"><pre class="highlight plaintext" tabindex="0"><code>{
-    "code": "FUNCTIONAL_ERROR",
-    "message": "The request was rejected by the guarantee management system",
-    "response": {
-        "errors": [
+    "code":"FUNCTIONAL_ERROR",
+    "message":"The request was rejected by the guarantee management system",
+    "response":{
+        "errors":[
             {
-                "errorType": 12,
-                "errorPointer": "GRR(1).OTG(1).TIN"
+                "errorType":12,
+                "errorPointer":"RC1.TIN"
+            },
+            {
+                "errorType":12,
+                "errorPointer":"GRR(1).OTG(1).TIN"
+            },
+            {
+                "errorType":26,
+                "errorPointer":"RC1.TIN"
             }
         ]
     }
@@ -352,12 +373,12 @@ Current balance: £30,000<br></p>
 <p>Once you are satisfied with your tests and are confident that your software is fully compatible with our API:</p>
 
 <ol>
-<li>Log all your evidence and results by filling in all the sections of this <a href="https://developer.service.hmrc.gov.uk/guides/common-transit-convention-traders-testing-guide/figures/CTC_Traders_API_Application_for_Productions_Credentials.docx" rel="noopener noreferrer">checklist form</a> (this is a Word document which will download). You must also answer all the questions at the end of the checklist.</li>
-<li>When you are ready, email your completed form to SDSTeam@hmrc.gov.uk.</li>
+<li><a href="documentation/figures/CTCGuarantee_Balance_API_Checklist_07-02-22.odt" rel="noopener noreferrer">Log all your evidence and results on the checklist form (OpenOffice Document)</a>. You must also answer all the questions at the end of the checklist.</li>
+<li>When you are ready, <a rel="noreferrer noopener" href="mailto: SDSTeam@hmrc.gov.uk">email your completed form to SDSTeam@hmrc.gov.uk.</a></li>
 <li>We will check your test evidence using the information you give on this form.</li>
 <li>When we are satisfied that you have done enough testing, you will be granted access to the live API system.</li>
 </ol>
-<p>For further information about the process you need to follow to submit your application for production approval, see <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub" rel="noopener noreferrer">section 4 of Using the Developer Hub</a>.</p>
+<p>For further information about the process you need to follow to submit your application for production approval, see <a href="/api-documentation/docs/using-the-hub" rel="noopener noreferrer">section 4 of Using the Developer Hub</a>.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <h3 id="checking-api-service-availability">Checking API service availability</h3>
@@ -370,6 +391,6 @@ Current balance: £30,000<br></p>
 </ul>
 <h3 id="if-you-need-further-help-and-support">If you need further help and support</h3>
 
-<p>Email our dedicated software developer support team at SDSTeam@hmrc.gov.uk if you have any questions or difficulties or need additional clarification on this testing process.</p>
-<p>For versioning information and a list of errors that you might receive, please refer to the <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0" rel="noopener noreferrer">CTC Guarantee Balance API Definition</a> page.</p>
+<p><a rel="noreferrer noopener" href="mailto: SDSTeam@hmrc.gov.uk">Email our dedicated software developer support team at SDSTeam@hmrc.gov.uk</a> if you have any questions or difficulties or need additional clarification on this testing process.</p>
+<p>For versioning information and a list of errors that you might receive, please refer to the <a href="/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/1.0" rel="noopener noreferrer">CTC Guarantee Balance API Definition</a> page.</p>
 <p>Bookmark and save this page for future reference.</p>
