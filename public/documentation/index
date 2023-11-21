@@ -1,4 +1,4 @@
-<h1 id="ctc-guarantee-balance-api-testing-guide">CTC Guarantee Balance API Testing Guide</h1>
+<h1 id="ctc-guarantee-balance-api-phase-4-testing-guide">CTC Guarantee Balance API phase 4 testing guide</h1>
 
 <h2 id="useful-links-to-our-pages">Useful links to our pages</h2>
 
@@ -39,7 +39,7 @@
 <p>Here are the main developer files you will need:</p>
 
 <ul>
-<li><a href="/documentation/figures/CTC_Guarantee_Balance_API_JSON.zip" rel="noopener noreferrer">JSON schema files, ZIP, 5KB (file unzips and downloads)</a></li>
+<li><a href="/guides/ctc-guarantee-balance-testing-guide/documentation/figures/CTC_Guarantee_Balance_API_JSON.zip" rel="noopener noreferrer">JSON schema files, ZIP, 5KB (file unzips and downloads)</a></li>
 </ul>
 <p>The ZIP file contains JSON files. Open in your preferred file viewer.</p>
 <h2 id="what-is-trader-test">What is trader test?</h2>
@@ -373,7 +373,7 @@
 <p>Once you are satisfied with your tests and are confident that your software is fully compatible with our API:</p>
 
 <ol>
-<li><a href="documentation/figures/CTCGuarantee_Balance_API_Checklist_07-02-22.odt" rel="noopener noreferrer">Log all your evidence and results on the checklist form (OpenOffice Document)</a>. You must also answer all the questions at the end of the checklist.</li>
+<li><a href="/guides/ctc-guarantee-balance-testing-guide/documentation/figures/CTCGuarantee_Balance_API_Checklist_07-02-22.odt" rel="noopener noreferrer">Log all your evidence and results on the checklist form (OpenOffice Document)</a>. You must also answer all the questions at the end of the checklist.</li>
 <li>When you are ready, <a rel="noreferrer noopener" href="mailto: SDSTeam@hmrc.gov.uk">email your completed form to SDSTeam@hmrc.gov.uk.</a></li>
 <li>We will check your test evidence using the information you give on this form.</li>
 <li>When we are satisfied that you have done enough testing, you will be granted access to the live API system.</li>
