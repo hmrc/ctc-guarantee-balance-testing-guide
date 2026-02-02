@@ -10,17 +10,17 @@ Learn how to test the compatibility of your software with New Computerised Trans
 
 ## Before you start
 
-When you are ready to test your software, first read and understand the [CTC Guarantee Balance API service guide](https://developer.service.hmrc.gov.uk/guides/ctc-guarantee-balance-phase5-service-guide/).
+When you are ready to test your software, first read and understand the [CTC Guarantee Balance API service guide](https://developer.service.hmrc.gov.uk/guides/ctc-guarantee-balance-service-guide/).
 
 ### Trader Test
 
 Trader Test is a test environment that simulates both automated responses and real-life NCTS experience. This includes the Guarantee Management System (GMS) against which you will be able to run your tests.
 
-For information about accessing the NCTS5 Trader Test environment, see [CTC Traders API testing guide](/guides/ctc-traders-phase5-testing-guide/#accessing-trader-test). 
+For information about accessing the NCTS Trader Test environment, see [CTC Traders API testing guide](/guides/ctc-traders-testing-guide/#accessing-trader-test). 
 
 ### Testing prerequisites
 
-For information about actions that must be completed before testing, see the quick start section of the [CTC Guarantee Balance API service guide](/guides/ctc-guarantee-balance-phase5-service-guide/#quick-start).
+For information about actions that must be completed before testing, see the quick start section of the [CTC Guarantee Balance API service guide](/guides/ctc-guarantee-balance-service-guide/#quick-start).
 
 ## Related documentation
 
