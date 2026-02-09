@@ -1,0 +1,190 @@
+---
+title: Test scenarios | CTC Guarantee Balance API testing guide
+weight: 4
+description: Software developers, designers, product owners or business analysts. Verify the compatibility of your software with CTC Guarantee Balance API and learn how to test your application in our sandbox environment.
+---
+
+# Test scenarios
+
+Use these scenarios when checking that your software functions correctly for guarantee balance requests and that it is compatible with HMRC systems. For each scenario, check that the response matches the request (requests and responses are expressed in JSON format).
+
+## Scenario 1: Successful balance response
+
+Verify that you receive the expected response with the correct balance and currency when your software issues a successful balance request.
+
+### Request
+
+Use the [Get a balance](/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/2.0/oas/page#operation/getGuaranteeBalance) endpoint of CTC Guarantee Balance API v2.0 to send a balance request with the following data.
+
+#### GB
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23GB0000010000854/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC01"
+}’
+```
+
+#### XI
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23XI0000010000655/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC01"
+}’
+```
+
+### Expected response
+
+A successful response should include the following.
+
+#### GB
+
+```json
+{
+ "balance": 262626,
+ "currency": "GBP"
+}
+```
+
+#### XI
+
+```json
+{
+ "balance": 30000,
+ "currency": "GBP"
+}
+```
+
+## Scenario 2: Resubmitting balance query within 60 seconds
+
+Verify that you receive a response containing an appropriate error message when your software issues a balance request within 60 seconds of the previous one.
+
+### Request
+
+Use the [Get a balance](/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/2.0/oas/page#operation/getGuaranteeBalance) endpoint of CTC Guarantee Balance API v2.0 to send a balance request with the following data twice within 60 seconds.
+
+#### GB
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23GB0000010000863/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC01"
+}’
+```
+
+#### XI
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23XI0000010000664/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC01"
+}’
+```
+
+### Expected response
+
+The response to the second query should include the following.
+
+#### GB/XI
+
+```json
+{
+ "code": "TOO_MANY_REQUESTS",
+ "message: "Too many requests."
+}
+```
+
+## Scenario 3: Invalid GRN
+
+Verify that you receive the expected response with the relevant error information when your software issues a balance request that contains an invalid GRN.
+
+### Request
+
+Use the [Get a balance](/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/2.0/oas/page#operation/getGuaranteeBalance) endpoint of CTC Guarantee Balance API v2.0 to send a balance request with an invalid GRN.
+
+#### GB
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23GB0000010000873/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC01"
+}’
+```
+
+#### XI
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23XI0000010000665/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC01"
+}’
+```
+
+### Expected response
+
+The response to the second query should include the following.
+
+#### GB/XI
+
+```json
+{
+ "code": "NOT_FOUND",
+ "message": "The guarantee reference number or access code did not match an existing guarantee."
+}
+```
+
+## Scenario 4: Invalid access code
+
+Verify that you receive the expected response with the relevant error information when your software issues a balance request that contains an invalid access code.
+
+### Request
+
+Use the [Get a balance](/api-documentation/docs/api/service/common-transit-convention-guarantee-balance/2.0/oas/page#operation/getGuaranteeBalance) endpoint of CTC Guarantee Balance API v2.0 to send a balance request with an invalid access code.
+
+#### GB
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23GB0000010000854/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC00"
+}’
+```
+
+#### XI
+
+```curl
+curl -X POST “https://test-api.service.hmrc.gov.uk/customs/guarantees/23XI0000010000655/balance” \
+-H “Accept: application/vnd.hmrc.2.0+json” \
+-H “Content-Type: application/json” \
+-d ‘{
+ "accessCode": "AC00"
+}’
+```
+
+### Expected response
+
+The response to the second query should include the following.
+
+#### GB/XI
+
+```json
+{
+ "code": "NOT_FOUND",
+ "message": "The guarantee reference number or access code did not match an existing guarantee."
+}
+```

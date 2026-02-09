@@ -1,4 +1,4 @@
-# Service Guides/Roadmaps
+# Technical Documentation - Common Transit Convention Traders Guarantee Balance Testing Guide
 
 ## Editing Service Guide pages
 
@@ -63,7 +63,7 @@ new SbtMicroserviceJobBuilder(TEAM, 'service-guide-skeleton')
         .build(this as DslFactory)
 ```
 
-NB the version of Ruby is automatically picked up from `.ruby-version`. But the Node version isn't! Make sure that the 
+NB the version of Ruby is automatically picked up from `.ruby-version`. But the Node version isn't! Make sure that the
 version you specify on the build job is the same as what is in `.node-version`.
 
 ## License

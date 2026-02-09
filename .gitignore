@@ -1,7 +1,3 @@
-
-project/.bloop
-project/metals.sbt
-.bloop/
 logs
 project/project
 project/target
@@ -24,16 +20,11 @@ node_modules/
 npm-debug.log
 yarn-debug.log
 yarn-error.log
+/.batect
 
-.metals
-.vscode
-
-.batect
-.bsp
-package-lock.json
-Gemfile.lock
-
-.DS_Store
 **/.DS_Store
-build
+.DS_Store
+.metals/
+.vscode/
 /public
+/.bsp/sbt.json
