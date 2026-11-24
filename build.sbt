@@ -2,7 +2,7 @@ import sbt.Keys._
 
 val appName = "ctc-guarantee-balance-testing-guide"
 
-scalaVersion := "3.3.4"
+scalaVersion := "3.3.9"
 
 ThisBuild / scalafixDependencies += "com.github.liancheng" %% "organize-imports" % "0.6.0"
 ThisBuild / semanticdbEnabled := true
